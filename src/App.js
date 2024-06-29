@@ -16,7 +16,7 @@ export const LogingedContext = createContext();
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const SERVER_IP = "http://43.202.51.66:9000";
+  const SERVER_IP = "http://3.39.228.156:9000";
   //컴포넌트가 mount or update 될때 로그인 여부에 따른 상태값 변경
   useEffect(() => {
     localStorage.getItem("id") != null ? setIsLoggedIn(true) : setIsLoggedIn(false);
